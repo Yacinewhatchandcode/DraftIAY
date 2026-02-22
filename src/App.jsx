@@ -104,12 +104,16 @@ function DraftBoard() {
   const reactFlowWrapper = useRef(null);
 
   React.useEffect(() => {
-    loadSovereignState().then(matrix => {
-      if (matrix && matrix.nodes && matrix.edges) {
-        setNodes(matrix.nodes);
-        setEdges(matrix.edges);
-      }
-    });
+    loadSovereignState()
+      .then(matrix => {
+        if (matrix && matrix.nodes && matrix.edges) {
+          setNodes(matrix.nodes);
+          setEdges(matrix.edges);
+        }
+      })
+      .catch((err) => {
+        console.warn("[Sovereign Log] Matrix state load gracefully rejected.", err);
+      });
   }, [setNodes, setEdges]);
 
   const syncSovereignMatrix = () => {
