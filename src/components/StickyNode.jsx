@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import { Handle, Position, useReactFlow } from '@xyflow/react';
 import { Wand2, RefreshCw } from 'lucide-react';
 
-const simulateAiRephrase = async (text) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            if (!text || text.trim() === '') {
-                resolve("Empty Context");
-                return;
-            }
-            const words = text.split(/[\s,.]+/).filter(w => w.trim().length > 3);
-            if (words.length === 0) resolve("Brainstorming");
-            const uniqueKeywords = [...new Set(words)];
-            const topWords = uniqueKeywords.sort(() => 0.5 - Math.random()).slice(0, Math.min(5, uniqueKeywords.length));
-            const keywords = topWords.map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
-            resolve(keywords.join(' · '));
-        }, 1200);
-    });
+const performAiRephrase = async (text) => {
+    try {
+        const response = await fetch('/api/rephrase', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text })
+        });
+        const data = await response.json();
+
+        if (!response.ok) throw new Error(data.error || 'Swarm Error');
+        return data.result;
+    } catch (err) {
+        console.error("Vagabond API Timeout:", err);
+        return "Sovereign Override · Offline · Manual";
+    }
 };
 
 export default function StickyNode({ id, data, selected }) {
@@ -41,7 +41,7 @@ export default function StickyNode({ id, data, selected }) {
     const handleRephrase = async () => {
         setIsAiLoading(true);
         setGlow(false);
-        const result = await simulateAiRephrase(data.label);
+        const result = await performAiRephrase(data.label);
         setNodes((nds) =>
             nds.map((node) => {
                 if (node.id === id) {

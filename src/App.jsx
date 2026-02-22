@@ -15,17 +15,20 @@ import { v4 as uuidv4 } from 'uuid';
 import StickyNode from './components/StickyNode';
 import GroupNode from './components/GroupNode';
 import SwarmLog from './components/SwarmLog';
+import ImageNode from './components/ImageNode';
+import { saveSovereignState, loadSovereignState } from './lib/persistence';
 import {
   Plus, Settings, MousePointer2, Hand, SquareSquare,
   Image as ImageIcon, MessageSquareText, PenTool,
   Type, Zap, BoxSelect, Link, Layers, ArrowRightLeft,
-  Share2
+  Share2, RefreshCw
 } from 'lucide-react';
 import './App.css';
 
 const nodeTypes = {
   sticky: StickyNode,
   groupNode: GroupNode,
+  imageNode: ImageNode,
 };
 
 const initialNodes = [
@@ -100,6 +103,20 @@ function DraftBoard() {
   const [isLogVisible, setIsLogVisible] = useState(true); // Default open to showcase logs
   const reactFlowWrapper = useRef(null);
 
+  React.useEffect(() => {
+    loadSovereignState().then(matrix => {
+      if (matrix && matrix.nodes && matrix.edges) {
+        setNodes(matrix.nodes);
+        setEdges(matrix.edges);
+      }
+    });
+  }, [setNodes, setEdges]);
+
+  const syncSovereignMatrix = () => {
+    saveSovereignState(nodes, edges);
+    // Visual flash could be added here
+  };
+
   const onConnect = useCallback((params) => {
     // Random color for new edges
     const colors = ['#3b82f6', '#8b5cf6', '#ec4899', '#34d399', '#fbbf24'];
@@ -130,6 +147,16 @@ function DraftBoard() {
     setNodes((nds) => [newNode, ...nds]); // Add to back
   };
 
+  const addImageNode = () => {
+    const newNode = {
+      id: uuidv4(),
+      type: 'imageNode',
+      position: { x: Math.random() * 200, y: Math.random() * 200 },
+      data: { prompt: '', imageUrl: '' },
+    };
+    setNodes((nds) => nds.concat(newNode));
+  };
+
   return (
     <div className="react-flow-wrapper" ref={reactFlowWrapper}>
       <ReactFlow
@@ -158,6 +185,10 @@ function DraftBoard() {
               <span>Draft AIY</span>
             </div>
             <div className="nav-actions">
+              <button className="btn-secondary" onClick={syncSovereignMatrix}>
+                <RefreshCw size={16} />
+                <span>Sync Matrix</span>
+              </button>
               <button className="btn-secondary">
                 <Share2 size={16} />
                 <span>Share</span>
@@ -211,7 +242,7 @@ function DraftBoard() {
             <button className="tool-btn" title="Text Area (T)">
               <Type size={18} />
             </button>
-            <button className="tool-btn" title="Add Image (I)">
+            <button className="tool-btn" onClick={addImageNode} title="Add Image (I)">
               <ImageIcon size={18} />
             </button>
 
