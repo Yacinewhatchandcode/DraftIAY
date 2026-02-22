@@ -12,7 +12,7 @@ export default async function handler(request, response) {
         const aiResponse = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
-                "Authorization": `Bearer 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`,
+                "Authorization": `Bearer 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`,
                 "Content-Type": "application/json",
                 "HTTP-Referer": "https://draft-aiy.vercel.app/",
                 "X-Title": "Draft AIY"
