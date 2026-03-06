@@ -1,0 +1,17 @@
+{
+    "name": "sovereign-fleet-mcp",
+    "version": "1.0.0",
+    "description": "Sovereign Fleet MCP Server — Unified agent communication gateway for Agent Zero, Ollama, ByteBot, Kokoro TTS, n8n, VPS services, and GPU infrastructure",
+    "type": "module",
+    "main": "src/index.js",
+    "bin": {
+        "sovereign-fleet-mcp": "src/index.js"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.12.1"
+    }
+}

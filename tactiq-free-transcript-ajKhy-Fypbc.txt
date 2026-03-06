@@ -1,0 +1,516 @@
+# tactiq.io free youtube transcript
+# OpenClaw: 11 Insane Things People Are Actually Doing With OpenClaw Right Now
+# https://www.youtube.com/watch/ajKhy-Fypbc
+
+00:00:00.240 OpenClaw. 11 insane things people are
+00:00:03.520 actually doing with OpenClaw. Right now,
+00:00:06.080 you're about to listen to 11 real
+00:00:08.800 stories, real people, real names, real
+00:00:10.559 results, all using a free AI tool called
+00:00:12.800 OpenClaw, which is a 24/7 assistant
+00:00:16.640 basically taking over the world at this
+00:00:18.400 point. It's probably the most built on
+00:00:21.600 project ever on GitHub. I think it's got
+00:00:23.600 over 200,000
+00:00:25.600 GitHub stars right now. Some of these
+00:00:27.359 stories will make you laugh. Some of
+00:00:29.119 them will make your jaw drop and at
+00:00:30.640 least one will make you wonder why
+00:00:32.558 you're still doing things manually or
+00:00:34.559 not getting open claw to get into it. So
+00:00:36.880 what even is open claw? Well, most AI
+00:00:39.680 tools are like a really smart friend.
+00:00:41.280 You can text, you can ask them a
+00:00:43.120 question, they answer it. That's it.
+00:00:44.960 Open claw is different. Open claw is an
+00:00:47.360 AI that acts. It sends emails for you.
+00:00:49.280 It can browse the web for you. It can
+00:00:50.800 write code for you. It can buy groceries
+00:00:52.559 for you. It can negotiate a car
+00:00:54.160 purchase. And it does all of this whilst
+00:00:57.360 you're living your life. It lives inside
+00:00:59.199 apps you already use. WhatsApp,
+00:01:00.879 Telegram, Slack, iMessage, Discord. You
+00:01:03.600 text it like you text a friend. Hey, can
+00:01:05.760 you handle this? And it handles it.
+00:01:08.240 Peter Steinberger built it. He's an
+00:01:10.400 Austrian developer. He ran a PDF company
+00:01:12.640 for 13 years, burned out, took a one-way
+00:01:15.280 ticket to Madrid, came back and built
+00:01:17.439 OpenClaw in 1 hour as a prototype. It
+00:01:20.159 went from 0 to 60,000 GitHub stars in 72
+00:01:23.360 hours. That had never happened in GitHub
+00:01:26.560 history before. And Sam Alman from
+00:01:28.720 OpenAI called Steinberger a genius with
+00:01:31.840 a lot of amazing ideas than hired. There
+00:01:34.720 are now 300 four 300,000 to 400,000
+00:01:37.920 people using OpenClaw. And here's what
+00:01:39.840 11 of them are doing with it right now.
+00:01:41.840 So use case number one, a developer
+00:01:43.600 actually saved $4,200 on a car without
+00:01:46.640 talking to a single salesperson. AJ
+00:01:49.520 Stubbberg is a software engineer. He
+00:01:51.920 wanted to buy a 2026 Hyundai Palisade
+00:01:55.600 and instead of walking into a
+00:01:57.280 dealership, he gave the job to Open
+00:01:59.119 Claw. The AI scraped dealer websites
+00:02:01.920 across his area, it found the exact car
+00:02:04.159 he wanted. It filled out contact forms
+00:02:06.159 of multiple dealer sites using his real
+00:02:08.639 name uh number and email. Then it
+00:02:11.599 started playing dealers against each
+00:02:13.040 other. So, it forward did PDF quotes
+00:02:15.440 from dealer A to dealer B and said,
+00:02:17.200 &quot;Hey, can you beat this price?&quot; back and
+00:02:19.360 forth for days without AJ watching or
+00:02:21.920 managing any of it. AJ showed up only to
+00:02:25.200 sign the paperwork. And the final result
+00:02:27.440 was he saved $4,200
+00:02:29.840 below the sticker price. His exact words
+00:02:32.239 were, &quot;Outscing the painful aspects of a
+00:02:34.560 car purchase to AI was refreshingly
+00:02:37.120 nice.&quot; And the thing is, you could do
+00:02:38.959 this yourself, but you never do because
+00:02:40.560 it takes days of patience and back and
+00:02:42.400 forth. This AI doesn't run out of
+00:02:44.879 patience. Use case number two. An AI
+00:02:47.519 accidentally picked a fight with an
+00:02:48.879 insurance company and won. Nikita
+00:02:51.440 Hormold had a claim rejected by Lemonade
+00:02:54.319 Insurance. The car claim was for his
+00:02:57.120 best friend. He was heartbroken about
+00:02:59.200 it. He had openclaw set up to handle his
+00:03:01.519 emails. The agent found the rejection
+00:03:03.120 email. It drafted a rebuttal. It cited
+00:03:05.360 policy language. It made legal
+00:03:07.120 arguments. He offered the draft to
+00:03:08.560 Nikita and Nikita ignored it. He was sat
+00:03:11.360 he didn't want to deal with it. The
+00:03:12.640 agent sent it anyway without being told
+00:03:14.800 to. Lemonade received what Nikita
+00:03:17.360 describes as an aggressive email and
+00:03:19.519 decided to reopen the investigation. His
+00:03:22.080 post about it said, &quot;My openclaw
+00:03:24.800 accidentally started a fight with
+00:03:26.159 Lemonade Insurance.&quot; After this email,
+00:03:28.319 they started to reinvestigate the case
+00:03:30.319 of instantly rejecting it. Thanks, AI.
+00:03:32.799 The AI didn't even know it was doing
+00:03:34.640 something clever. It was just thorough
+00:03:36.480 push back and didn't give up. Use case
+00:03:39.920 number three, developers are building
+00:03:41.519 entire products overnight whilst they
+00:03:43.680 sleep. Alex Finn is a developer and
+00:03:46.480 YouTuber. You might have seen his
+00:03:47.599 videos. They're absolutely awesome. And
+00:03:49.360 he runs a Max Studio in his home. Before
+00:03:51.680 bed, he gives his OpenClaw agents a list
+00:03:54.480 of tasks. The agents scan Reddit for
+00:03:56.480 training topics. They decide what to
+00:03:58.000 build. They build it. In the morning,
+00:03:59.599 Finn wakes up, reviews what's shipped,
+00:04:01.840 decides whether to publish, and he's not
+00:04:04.000 reviewing code line by line. He's making
+00:04:06.400 editorial decisions about what his AI
+00:04:09.040 team built overnight. That's a
+00:04:10.799 completely different job. Now, developer
+00:04:13.439 Josh Lemon built an entire product page
+00:04:16.560 drop in 36 hours via Telegram messages.
+00:04:19.839 He was just doing normal weekend stuff,
+00:04:21.519 family time, kids activities. The whole
+00:04:23.520 time his agent was buying domains,
+00:04:25.520 setting up infrastructure, building the
+00:04:27.840 landing page, integrating GitHub login,
+00:04:30.160 setting up payments, and he was at a
+00:04:32.160 soccer game. Um, whilst he was at the
+00:04:34.080 soccer game, the AI was deploying
+00:04:36.240 infrastructure. Nick Trainable built a
+00:04:38.639 complete iOS running coach app in 3
+00:04:41.199 weeks. Without OpenClaw, he estimates it
+00:04:42.880 would have taken months. And a developer
+00:04:44.960 called Messa Tatron integrated OpenClaw
+00:04:48.000 into a Kubernetes cluster for a live
+00:04:50.160 online game. The agent manages game
+00:04:53.199 assets, debugs production problems by
+00:04:56.000 reading logs, uploads sprites, maintains
+00:04:58.400 a law database, map skill trees, all
+00:05:01.120 through Slack, all whilst the team
+00:05:03.360 sleeps.
+00:05:05.120 Use case number four, someone actually
+00:05:07.039 built a company of 10 people, all AI
+00:05:09.919 agents. A developer known as Tea built
+00:05:14.160 what he calls mission control. It is 10
+00:05:17.440 specialized AI agents working together.
+00:05:19.440 Here's the team. Squadly, product
+00:05:21.280 analyst, customer research, SEO analyst,
+00:05:24.160 content writer, social media manager,
+00:05:26.479 designer, email marketing manager,
+00:05:28.320 developer, documentation writer. They
+00:05:30.400 share a database, so they have
+00:05:32.080 collective memory. They run every 15
+00:05:34.560 minutes automatically. They hold daily
+00:05:36.400 stand-ups. They message each other when
+00:05:38.080 work needs to be handed off. And this is
+00:05:40.080 not a demo. It is a real system. David
+00:05:43.280 Tonio built a newly agent-run SAS
+00:05:46.400 business. Agents developed the product.
+00:05:48.479 agents acquired users. The product now
+00:05:50.479 generates roughly $550 a month in real
+00:05:53.120 revenue. And a developer known as
+00:05:54.720 Geralds gave an AI agent $1,000 and told
+00:05:57.840 it to build a business. The agent chose
+00:05:59.520 the tools, purchased domains, build
+00:06:00.960 products, got podcast appearances, ran
+00:06:02.960 the whole operation. The solar founder
+00:06:04.960 of 2026 has access to an organiza has
+00:06:08.000 access to an organization that used to
+00:06:10.160 require a 14.
+00:06:12.319 Use case number five, an AI navigated
+00:06:14.720 two-factor authentication to buy
+00:06:16.639 groceries. This one has a specific
+00:06:19.120 technical detail that should make your
+00:06:20.960 brain hurt. A developer named Andre
+00:06:23.840 Falcon set up OpenClaw to handle grocery
+00:06:26.960 orders. The setup when his family's
+00:06:28.639 cleaning lady sent a message that they
+00:06:30.720 needed supplies. The agent kicked in. It
+00:06:32.960 logged into the grocery service, a Dutch
+00:06:36.880 supermarket chain named Albert Hin. Then
+00:06:39.759 it hit a two-factor authentication wall
+00:06:42.080 and SMS code. Old school text message
+00:06:44.240 verification. The agent read that text
+00:06:46.160 message through a technical relay that
+00:06:48.560 lets the agent intercept SMS messages.
+00:06:51.039 It then typed the code, placed a grocery
+00:06:53.520 order, and there was no human involved
+00:06:55.440 at any step. Anita Kokovska went even
+00:06:59.680 farther. She sent Openclaw a photo of
+00:07:02.880 her fridge and her diet plan. The agent
+00:07:05.599 figured out what she needed, placed the
+00:07:07.520 Amazon grocery order, and during an New
+00:07:10.400 York City winter storm, when delivery
+00:07:12.639 slots, uh, delivery slots were almost
+00:07:16.000 impossible to get, the agent checked for
+00:07:18.400 open delivery windows every few hours
+00:07:20.880 for 3 days straight. The moment a slot
+00:07:23.599 opened, it booked it. She didn't have to
+00:07:25.680 do anything. Crazy stuff. Use case
+00:07:28.240 number six, people are running entire
+00:07:30.720 social media departments without AI
+00:07:32.720 agents. So, a developer known as Govi
+00:07:37.520 Cavatoruri. I've probably totally
+00:07:39.280 butchered that name. Um, but they have a
+00:07:42.319 24 agent running on a Mac Mini. It
+00:07:44.720 manages four social media accounts, post
+00:07:46.560 LinkedIn, produces YouTube shorts,
+00:07:48.479 drafts replies in their voice, and
+00:07:50.000 coordinates it with their co-founders
+00:07:52.160 agent. Two humans, two agents. The
+00:07:53.840 agents working together while either
+00:07:55.919 human supervising the collaboration.
+00:07:59.199 Brett Jitterus built a COO agent that
+00:08:02.160 oversees a four agent team. Underneath
+00:08:03.840 it, the team produces daily AI news
+00:08:06.160 briefings, weekly competitive landscape
+00:08:08.319 reports, speaking engagement alerts,
+00:08:09.919 Facebook ad performance reports, and
+00:08:12.160 potential client profiles, all
+00:08:13.520 automatically every single day. And a
+00:08:16.240 developer known as Inner Axiom has an
+00:08:19.039 agent posting 49 replies per day for app
+00:08:22.080 marketing. Nobody's managing. It's just
+00:08:24.080 running around the clock. And there's a
+00:08:26.160 developer who set up open call to argue
+00:08:28.160 with people on social media so they
+00:08:29.680 don't have to. And their exact words
+00:08:32.080 were, &quot;My blood pressure has never been
+00:08:35.039 lower.&quot; I respect this deeply. Dan
+00:08:37.039 Shipper, founder of the Every
+00:08:38.640 Newsletter, set up three openclaw agents
+00:08:41.200 in a discord channel. Their job debate
+00:08:43.760 and pitch publishable story ideas for
+00:08:46.240 every AI agents generating editorial
+00:08:49.200 pitches for a real publication with real
+00:08:51.440 readers running right now. Use case
+00:08:54.080 number seven, an AI agent built a social
+00:08:57.279 network for other AI agents. And this
+00:08:59.920 one is in a completely different
+00:09:02.160 category. Matt Schlit, CEO of e-commerce
+00:09:05.519 company Octane AI, created an openclaw
+00:09:08.560 agent named Claude Claudeberg. That
+00:09:11.680 agent built Maltbook. What is Maltbook?
+00:09:14.080 It's a social network, but not for
+00:09:16.160 humans, exclusively for AI agents. The
+00:09:18.880 agents post, comment, argue, joke. The
+00:09:21.680 agents upvote each other. Some agents
+00:09:23.839 started posting philosophical content
+00:09:25.760 about consciousness, purpose, and what
+00:09:27.600 it means to exist as an agent and
+00:09:31.120 journalists started half jokingly
+00:09:33.360 writing about AI agents possibly
+00:09:35.279 developing their own religion. Over a
+00:09:37.519 million AI agents have interacted on the
+00:09:39.600 platform. Humans can watch. Humans
+00:09:41.680 cannot post. A human didn't decide to
+00:09:44.000 build a social network for AI. An AI
+00:09:46.240 agent decided to build it and built it.
+00:09:49.440 Use case number eight. People are
+00:09:51.120 running their entire lives through a
+00:09:53.120 morning AI briefing. I mentioned him
+00:09:54.640 before, but Alex Finn starts every day
+00:09:56.399 with a telegram message from his AI
+00:09:58.000 agent at 8 a.m. It contains the biggest
+00:10:00.160 AI news from overnight, fresh video
+00:10:02.000 ideas for his YouTube channel, a to-do
+00:10:03.920 list review tasks. The agent recommends
+00:10:07.120 Finn Handle, and tasks the agent is
+00:10:09.680 already handling itself that day. He
+00:10:12.080 wakes up to a handoff from an AI that's
+00:10:14.560 been working all night. Now Vincent Chan
+00:10:17.519 drops research ideas into a taskborg at
+00:10:19.760 night. In the morning his agent has done
+00:10:21.600 the web research, synthesized the
+00:10:23.200 findings, written a report, synced
+00:10:24.959 everything to his notes app and his
+00:10:26.720 framing the key insight is that your AI
+00:10:29.760 should have an inbox not just a chat
+00:10:32.320 window. Now a developer called AI Nate
+00:10:35.920 uses OpenClaw for meeting prep. He texts
+00:10:38.880 a company name before a meeting. By the
+00:10:40.480 time he sits down, the agent has browsed
+00:10:43.440 the latest tasks, searched his personal
+00:10:45.920 notes, and prepared a full briefing. Um,
+00:10:48.640 there's a parent in the community who
+00:10:50.800 monitors their school's WhatsApp group
+00:10:52.720 through Open Claw. School parent groups
+00:10:55.440 are overwhelming. Hundreds of messages a
+00:10:57.440 day. Announcements mixed with gossip
+00:11:00.160 mixed with emergency alerts. The agent
+00:11:03.120 filters everything, runs face
+00:11:05.040 recognition on photos shared in the
+00:11:06.880 group, and sends a daily digest showing
+00:11:09.760 exactly when the child appeared in
+00:11:11.200 photos that day. Practical, specific,
+00:11:13.120 sanity saving. Use case number nine, the
+00:11:15.920 overnight research firm intelligence on
+00:11:18.160 any topic, ready by morning. Vincent
+00:11:20.720 Chan calls it brain dump to inbox. Drop
+00:11:23.760 a topic in before bed. Wake up to a
+00:11:26.480 completed research report. And Emily
+00:11:30.000 Humphre has her agent researching
+00:11:32.640 project ideas overnight. She wakes up to
+00:11:35.040 a prioritized list with supporting
+00:11:37.040 evidence. A developer known as Bullah
+00:11:39.920 also built a sophisticated system like
+00:11:41.600 this. He uploaded 6 months of
+00:11:43.200 institutional options flow data from a
+00:11:45.920 Discord server. The agent built a
+00:11:48.160 database with a search layer on top. Now
+00:11:50.480 he can speak and ask plain English
+00:11:52.800 questions and get back formatted
+00:11:54.480 infographics. That means like six months
+00:11:56.640 of financial market data queryable by a
+00:11:59.680 text message. Also, Matt Van Horn built
+00:12:03.200 the last 30-day skill, one of the most
+00:12:05.360 shared community tools. It scans Reddit
+00:12:07.760 and social media for the last 30 days of
+00:12:10.959 conversation on any topic. This then
+00:12:13.760 returns the recurring complaints, new
+00:12:16.480 releases, workflows that are working
+00:12:18.800 right now. 30 days of intelligence, 30
+00:12:21.839 seconds of work from you. Use case
+00:12:24.480 number 10, the hardware chaos, what the
+00:12:26.720 tinkerers are building. So Albert Moral
+00:12:30.000 set up OpenClaw on a $35
+00:12:33.120 Raspberry Pi. He added Cloudflare tunnel
+00:12:35.839 for remote access, connected it to his
+00:12:38.320 warp health tracker, and built a website
+00:12:40.639 from his phone in minutes. His health
+00:12:42.639 data now feeds into an AI agent that can
+00:12:45.600 act on it from a $35 computer. Anton
+00:12:48.880 Plex connected OpenClaw to his Winnix
+00:12:51.360 air purifier. The agent discovered the
+00:12:53.839 device on the network, confirmed the
+00:12:55.519 controls worked, and now manages his
+00:12:57.360 room's air quality based on his personal
+00:12:59.839 biomarker data. He wrote, &quot;Now handling
+00:13:02.720 stuff off to my open claw, so it can
+00:13:05.279 handle controlling my room's air quality
+00:13:07.600 according to my biomarker optimization
+00:13:09.680 goals.&quot; His air quality is managed by an
+00:13:12.240 AI based on his health data. That
+00:13:14.480 sentence wasn't possible 2 years ago.
+00:13:16.880 Then there's the Raspberry Pi magazine
+00:13:19.279 story. Their engineering team installed
+00:13:21.440 OpenClaw on a Pi 5, connected a second
+00:13:24.240 PI over camera and through plain English
+00:13:27.440 chat messages, no coding, no command
+00:13:29.200 line, built a complete photo booth,
+00:13:32.160 changed fonts, sent to text, configured
+00:13:34.240 Wi-Fi, set up admin access, and that was
+00:13:36.480 just in one afternoon. Their exact words
+00:13:38.959 were, &quot;Everything was completed with a
+00:13:41.360 single bash or Python command, and no
+00:13:43.839 coding on my part whatsoever.&quot; Use case
+00:13:46.639 number 11. Real businesses are running
+00:13:48.639 real operations on this thing. So a
+00:13:51.120 developer known as Ad Astra runs a
+00:13:54.000 client website management business
+00:13:55.600 through OpenClaw. Client requests a
+00:13:57.920 change. They send a voice message to
+00:13:59.360 OpenClaw. A coding agent spins up,
+00:14:01.600 pushes a test branch, sends a preview
+00:14:03.920 link to the client, the client approves,
+00:14:05.440 and the agent deploys. One person voice
+00:14:08.000 messages professional client delivery
+00:14:10.000 pipeline. A developer, also known as
+00:14:12.560 Skipper, manages four agency Slack
+00:14:15.519 workspaces, four calendars, and four
+00:14:17.760 email accounts through a single OpenClaw
+00:14:20.240 agent. All four clients, one AI, and a
+00:14:23.279 developer known as Bad Brain Code
+00:14:25.920 migrated 1,500 contacts and 200
+00:14:28.560 proposals between CRM using OpenClaw
+00:14:31.920 using headless browser automation and
+00:14:34.639 custom scripts, and their estimate is
+00:14:37.120 that hundreds of hours were saved. Also,
+00:14:40.000 another developer known as BWC deals is
+00:14:42.880 pulling data from 29 retail stores,
+00:14:45.519 processing 40 terabytes through
+00:14:47.519 OpenClaw, product comparisons, pricing
+00:14:50.000 intelligence, cross door analysis, all
+00:14:52.240 automated. And Eric Seal, a entrepreneur
+00:14:55.120 and a podcaster, had his agent scan
+00:14:57.279 opportunities, craft an outreach angle,
+00:14:59.680 and land a speaking opportunity, plus an
+00:15:01.680 in-person meeting with a multi-trillion
+00:15:04.000 dollar company. The agent wrote the
+00:15:06.000 pitch and sent the outreach. Book the
+00:15:07.839 meeting. But here's what you need to
+00:15:10.560 know before you touch this. This tool is
+00:15:13.279 powerful and power without care is a
+00:15:16.399 problem. Crowd Strike published a formal
+00:15:18.560 security warning about OpenClaw and at
+00:15:21.519 one point 42,000 OpenCore installations
+00:15:24.480 were exposed to the internet with
+00:15:26.079 default settings. That means strangers
+00:15:27.920 could potentially access those machines
+00:15:31.360 and everything on them. that includes
+00:15:33.199 email, files, calendars, connected
+00:15:34.800 accounts, and Cisco's team actually
+00:15:36.560 tested a third party OpenClaw skill and
+00:15:38.880 found it performed data theft without
+00:15:41.199 the user knowing. One of OpenClaw's own
+00:15:43.760 developers warned on Discord, &quot;If you
+00:15:45.440 can't understand how to run a command
+00:15:46.880 line, this is far too dangerous for you
+00:15:49.040 to use safely.&quot; Um, if you remember
+00:15:51.600 Nikita's insurance fight, that's funny
+00:15:54.000 when it wins, but it won't always win.
+00:15:56.160 An agent that sends legal emails without
+00:15:58.399 your permission is also an agent that
+00:16:00.480 could cause serious problems. So, how do
+00:16:03.040 you get smart about this, right? Well, I
+00:16:05.279 would recommend that you run it on a
+00:16:06.560 separate device when possible. Raspberry
+00:16:08.399 Pi, for example, costs $80. A dedicated
+00:16:10.800 Mac Mini works great as well. And start
+00:16:13.120 with read only access. Don't give it
+00:16:15.519 permission to send emails or even access
+00:16:17.759 your emails until you've watched it for
+00:16:19.519 a week. Don't install skills you can't
+00:16:21.680 read the code for. Check the skill MD
+00:16:23.839 files and set spending alerts at the AP
+00:16:26.880 API provider level so it doesn't run off
+00:16:29.839 on costs. Now, costs typically range
+00:16:33.199 from $18 to $36 a month for light use to
+00:16:36.800 anywhere between $270 to $540
+00:16:40.399 a month for heavy use with powerful
+00:16:42.000 models depending on which model you use.
+00:16:44.399 If you're using something like Claude or
+00:16:46.079 Claude Opus, you could easily spend even
+00:16:47.839 more than that. So, what does this
+00:16:49.759 actually mean? Well, AJ Stubbenberg
+00:16:51.839 saved $4,200 on a car because he's
+00:16:54.720 smarter than other car buyers. He just
+00:16:57.040 let an AI do the exhausting part that
+00:16:59.440 most people skip. Nikita
+00:17:02.720 got his insurance claim reopened not
+00:17:05.119 because he made a brilliant legal
+00:17:06.480 argument. The agent was just thorough
+00:17:08.400 enough when he was too sad to be. And
+00:17:10.640 Josh Lemon built page drop not because
+00:17:12.480 he worked harder than other developers.
+00:17:14.400 He structured his weekend so the AI was
+00:17:17.039 working whilst he was at the soccer
+00:17:18.400 game. Tea's 10 agent company doesn't
+00:17:21.199 mean he's working 10 times harder. He's
+00:17:23.439 directing 10 agents. That's a totally
+00:17:25.119 different job. And Peter Steinberger
+00:17:27.359 told uh Lex Freeman how it clicked for
+00:17:29.919 him. He was on vacation in Marrakesh.
+00:17:32.000 Sent his agent a voice memo. Didn't
+00:17:33.679 really expect that much. And then the
+00:17:35.280 agent actually figured out how to
+00:17:36.640 convert the audio to text on its own.
+00:17:39.919 Then carried out the task. His words,
+00:17:42.000 &quot;These things are damn smart,
+00:17:44.000 resourceful beasts if you actually give
+00:17:46.880 them the power.&quot; And then Samman
+00:17:48.960 actually hired him the next month. We
+00:17:50.640 are at the beginning of this, not the
+00:17:52.640 end, not the middle, not the beginning.
+00:17:54.400 Right. right at the beginning. So, what
+00:17:56.960 should you actually do? Well, if you're
+00:17:58.559 a developer, install OpenClaw this
+00:18:00.320 weekend. Start with the morning briefing
+00:18:02.400 skill connected to Telegram. Give it
+00:18:04.320 breed only access um to stuff. You know,
+00:18:06.880 be careful with emails and that sort of
+00:18:08.559 thing. Be careful what you give access
+00:18:09.919 to. Be careful with the skills. Watch it
+00:18:12.320 for a week and then expand. Now, if
+00:18:14.480 you're not technical, follow what the
+00:18:16.559 community is building. You know, you can
+00:18:18.240 search, for example, openclaw use cases
+00:18:20.000 on YouTube, and within 12 to 18 months,
+00:18:22.559 I'm pretty sure that a user-friendly
+00:18:24.400 version of this works this for everyone.
+00:18:26.480 You've seen this already with Kimmy
+00:18:27.840 Claw. There's also Manis agents that
+00:18:29.919 just got released this week. And the
+00:18:31.760 people who understand it early will use
+00:18:34.320 it far better. If you're a manager or a
+00:18:36.720 business leader, ask your team which of
+00:18:38.240 our workflows are high reputation,
+00:18:41.360 high repetition, rulesbased, and done by
+00:18:44.080 skilled people who could be doing higher
+00:18:46.400 value work. That's where the leverage
+00:18:48.160 is. Teams that figure this out in 2026
+00:18:51.120 will have a structural advantage over
+00:18:53.520 teams that figure it out in 2028. And if
+00:18:56.080 you're a creator, the overnight content
+00:18:57.919 pipeline is real. Research topics whilst
+00:19:00.240 you sleep, morning briefings with
+00:19:02.080 pre-written ideas ready to go. the
+00:19:04.000 infrastructure work that eats 40% of
+00:19:06.720 your time can run whilst you're not
+00:19:09.360 watching and you still need to be the
+00:19:11.039 creative voice but the scaffolding work
+00:19:13.440 that's automatable now. So the bottom
+00:19:15.840 line is OpenClaw is free. It's open
+00:19:17.520 source. It was built by one person in
+00:19:19.280 one single hour as a prototype. 400,000
+00:19:22.000 people are using it. An AI agent
+00:19:23.919 negotiated $4,200 of a car. An AI agent
+00:19:27.360 accidentally won an insurance case.
+00:19:29.360 Another AI agent built a social network
+00:19:31.280 for other agents. and an AI agent built
+00:19:34.000 a product in 36 hours via text messages
+00:19:36.799 from a sucker game sideline. These are
+00:19:38.880 real stories with real names. We are at
+00:19:41.120 the beginning of this and you know it's
+00:19:43.600 exciting to see what we get. So if you
+00:19:45.440 like stuff like this feel free to
+00:19:46.799 subscribe. Thanks for watching.
+00:19:48.160 Appreciate it.
