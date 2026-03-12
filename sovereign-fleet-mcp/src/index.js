@@ -32,9 +32,12 @@ import { promisify } from "util";
 
 const execAsync = promisify(exec);
 
-const VPS_HOST = process.env.VPS_HOST || "31.97.52.22";
+const VPS_HOST = process.env.VPS_HOST || "72.62.24.13";
 const VPS_USER = process.env.VPS_USER || "root";
 const SSH_TIMEOUT = process.env.SSH_TIMEOUT || "10";
+const IMAC_HOST = process.env.IMAC_HOST || "192.168.1.186";
+const IMAC_PORT = process.env.IMAC_PORT || "5557";
+const IMAC_BASE_URL = `http://${IMAC_HOST}:${IMAC_PORT}`;
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -439,6 +442,60 @@ const TOOLS = [
             required: ["repo_path"],
         },
     },
+    // IMAC ANTI-GRAVITY AGENT — Direct Physical Control
+    // ══════════════════════════════════════════════════════════════════════════
+    {
+        name: "imac_status",
+        description: "Check whether the iMac AntiGravity control agent is reachable before sending input or commands.",
+        inputSchema: { type: "object", properties: {} }
+    },
+    {
+        name: "imac_click",
+        description: "Click the mouse at specific physical coordinates on the iMac Windows screen.",
+        inputSchema: {
+            type: "object",
+            properties: {
+                x: { type: "number", description: "X coordinate (optional, clicks current if omitted)" },
+                y: { type: "number", description: "Y coordinate (optional)" },
+                button: { type: "string", description: "Mouse button", default: "left" },
+                clicks: { type: "number", description: "Number of clicks", default: 1 }
+            }
+        }
+    },
+    {
+        name: "imac_type",
+        description: "Type physical keystrokes on the iMac Windows screen.",
+        inputSchema: {
+            type: "object",
+            properties: {
+                text: { type: "string", description: "Text to type" },
+                interval: { type: "number", description: "Seconds between strokes", default: 0.0 }
+            },
+            required: ["text"]
+        }
+    },
+    {
+        name: "imac_hotkey",
+        description: "Press a combination of keys simultaneously on the iMac (e.g., ['ctrl', 'c'], ['win', 'r']).",
+        inputSchema: {
+            type: "object",
+            properties: {
+                keys: { type: "array", items: { type: "string" }, description: "Array of keys to press together" }
+            },
+            required: ["keys"]
+        }
+    },
+    {
+        name: "imac_execute",
+        description: "Execute a raw shell command on the iMac via PowerShell/CMD (background execution via AntiGravity).",
+        inputSchema: {
+            type: "object",
+            properties: {
+                command: { type: "string", description: "Command to execute (e.g., 'start msedge')" }
+            },
+            required: ["command"]
+        }
+    }
 ];
 
 // ─── Tool Handlers ──────────────────────────────────────────────────────────
@@ -620,17 +677,19 @@ async function handleTool(name, args) {
             try {
                 const resp = await httpFetch(`http://${VPS_HOST}:9999/mcp`, {
                     method: "POST",
-                    body: { jsonrpc: "2.0", id: 1, method: "tools/call",
-                        params: { name: "xsystem_dispatch", arguments: { task: args.task, context: args.context || "" } } },
+                    body: {
+                        jsonrpc: "2.0", id: 1, method: "tools/call",
+                        params: { name: "xsystem_dispatch", arguments: { task: args.task, context: args.context || "" } }
+                    },
                     timeoutMs: 90000,
                 });
                 if (resp.ok) return JSON.stringify(resp.body, null, 2);
                 // Fallback: local routing
                 const tl = (args.task || "").toLowerCase();
                 const agent = tl.includes("memory") || tl.includes("recall") ? "cognee" :
-                              tl.includes("browse") || tl.includes("click") || tl.includes("scrape") ? "bytebot" :
-                              tl.includes("workflow") || tl.includes("n8n") ? "n8n" :
-                              tl.includes("speak") || tl.includes("voice") ? "kokoro" : "agent_zero";
+                    tl.includes("browse") || tl.includes("click") || tl.includes("scrape") ? "bytebot" :
+                        tl.includes("workflow") || tl.includes("n8n") ? "n8n" :
+                            tl.includes("speak") || tl.includes("voice") ? "kokoro" : "agent_zero";
                 return JSON.stringify({ routing: { agent, fallback: true }, task: args.task });
             } catch (e) {
                 return `X-System dispatch error: ${e.message}`;
@@ -641,8 +700,10 @@ async function handleTool(name, args) {
             try {
                 const resp = await httpFetch(`http://${VPS_HOST}:9999/mcp`, {
                     method: "POST",
-                    body: { jsonrpc: "2.0", id: 1, method: "tools/call",
-                        params: { name: "zeroclaw_run_skill", arguments: { skill: args.skill, input: args.input } } },
+                    body: {
+                        jsonrpc: "2.0", id: 1, method: "tools/call",
+                        params: { name: "zeroclaw_run_skill", arguments: { skill: args.skill, input: args.input } }
+                    },
                     timeoutMs: 120000,
                 });
                 return JSON.stringify(resp.body, null, 2);
@@ -923,6 +984,63 @@ async function handleTool(name, args) {
                 return result.stdout;
             } catch (e) {
                 return `Git error: ${e.message}`;
+            }
+        }
+
+        // ── iMac Anti-Gravity Agent ──
+        case "imac_status": {
+            try {
+                const resp = await httpFetch(`${IMAC_BASE_URL}/`, { timeoutMs: 3000 });
+                return JSON.stringify({
+                    reachable: true,
+                    host: IMAC_HOST,
+                    port: IMAC_PORT,
+                    status: resp.status,
+                    body: resp.body,
+                });
+            } catch (e) {
+                return JSON.stringify({
+                    reachable: false,
+                    host: IMAC_HOST,
+                    port: IMAC_PORT,
+                    error: e.message,
+                });
+            }
+        }
+
+        case "imac_click": {
+            try {
+                const resp = await httpFetch(`${IMAC_BASE_URL}/click`, { method: "POST", body: args });
+                return JSON.stringify(resp.body);
+            } catch (e) {
+                return `imac_click failed: ${e.message}`;
+            }
+        }
+
+        case "imac_type": {
+            try {
+                const resp = await httpFetch(`${IMAC_BASE_URL}/type`, { method: "POST", body: args });
+                return JSON.stringify(resp.body);
+            } catch (e) {
+                return `imac_type failed: ${e.message}`;
+            }
+        }
+
+        case "imac_hotkey": {
+            try {
+                const resp = await httpFetch(`${IMAC_BASE_URL}/hotkey`, { method: "POST", body: args });
+                return JSON.stringify(resp.body);
+            } catch (e) {
+                return `imac_hotkey failed: ${e.message}`;
+            }
+        }
+
+        case "imac_execute": {
+            try {
+                const resp = await httpFetch(`${IMAC_BASE_URL}/execute`, { method: "POST", body: args });
+                return JSON.stringify(resp.body);
+            } catch (e) {
+                return `imac_execute failed: ${e.message}`;
             }
         }
 
