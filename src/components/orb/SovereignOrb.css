@@ -1,0 +1,230 @@
+.sovereign-orb-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0a0a0f 100%);
+    color: white;
+    font-family: 'Inter', -apple-system, sans-serif;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.orb-main-wrapper {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.orb-visual-ring {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orb-canvas {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    filter: blur(2px);
+}
+
+.orb-inner-sparkle {
+    position: relative;
+    z-index: 2;
+}
+
+.status-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+/* INPUT BAY - THE MINIMALIST INTERFACE */
+.orb-input-bay {
+    display: flex;
+    align-items: center;
+    background: rgba(20, 20, 30, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 8px 12px;
+    width: 500px;
+    max-width: 90vw;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.orb-input-bay:focus-within {
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.15);
+}
+
+.icon-btn, .send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    color: #94a3b8;
+    transition: all 0.2s;
+}
+
+.icon-btn:hover, .send-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.orb-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 16px;
+    font-size: 0.95rem;
+}
+
+.orb-input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* OUTPUT CARDS */
+.output-card {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 320px;
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.close-card {
+    margin-left: auto;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.artifact-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: var(--accent-blue, #3b82f6);
+    color: white;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* TELEMETRY */
+.orb-telemetry {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tele-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.tele-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.tele-dot.green { background: #10b981; box-shadow: 0 0 8px #10b981; }
+.tele-dot.blue { background: #3b82f6; box-shadow: 0 0 8px #3b82f6; }
+
+/* VISIBILITY TOGGLE */
+.orb-visibility-toggle {
+    pointer-events: auto;
+    position: fixed;
+    right: 24px;
+    top: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.orb-visibility-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* ANIMATIONS */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}

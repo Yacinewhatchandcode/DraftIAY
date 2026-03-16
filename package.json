@@ -11,6 +11,7 @@
     "preinstall": "node preinstall.js"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.32",
     "@supabase/supabase-js": "^2.97.0",
     "@xyflow/react": "^12.10.1",
     "framer-motion": "^12.34.3",

@@ -45,7 +45,7 @@ function PageNode({ data }) {
             <div
                 style={{
                     background: `linear-gradient(135deg, ${catColor}18 0%, #0a0a1a 100%)`,
-                    border: `1px solid ${hasLive ? '#22c55e' : catColor + '60'}`,
+                    border: `1px solid ${hasLive ? '#22c55e' : (data.apiCount > 0 ? catColor + '60' : '#ef444490')}`,
                     borderRadius: 10,
                     padding: '8px 12px',
                     minWidth: 140,
@@ -53,8 +53,10 @@ function PageNode({ data }) {
                     cursor: 'pointer',
                     transition: 'all 0.25s ease',
                     boxShadow: hasLive
-                        ? `0 0 16px #22c55e40, inset 0 0 20px #22c55e08`
-                        : `0 0 12px ${catColor}20, inset 0 0 20px ${catColor}08`,
+                        ? `0 0 20px #22c55e40, inset 0 0 20px #22c55e08`
+                        : data.apiCount > 0
+                            ? `0 0 12px ${catColor}20, inset 0 0 20px ${catColor}08`
+                            : `0 0 15px #ef444430, inset 0 0 20px #ef444410`,
                     position: 'relative',
                     zIndex: hovered ? 50 : 1,
                 }}
@@ -93,6 +95,24 @@ function PageNode({ data }) {
                     }}>
                         {data.catLabel}
                     </span>
+                    {data.apiCount > 0 && (
+                        <span style={{
+                            fontSize: 8, padding: '1px 5px', borderRadius: 3,
+                            background: '#8b5cf620', color: '#a78bfa',
+                            fontWeight: 600,
+                        }}>
+                            {data.apiCount} APIs
+                        </span>
+                    )}
+                    {data.apiCount === 0 && (
+                        <span style={{
+                            fontSize: 7, padding: '1px 4px', borderRadius: 3,
+                            background: '#ef444415', color: '#ef444480',
+                            fontWeight: 600,
+                        }}>
+                            no API
+                        </span>
+                    )}
                     {hasViews && (
                         <span style={{
                             fontSize: 8, padding: '1px 5px', borderRadius: 3,
@@ -144,11 +164,11 @@ function PageNode({ data }) {
                 <div
                     style={{
                         position: 'absolute',
-                        top: -320,
+                        top: -480,
                         left: '50%',
                         transform: 'translateX(-50%)',
                         width: 380,
-                        height: 280,
+                        height: 450,
                         zIndex: 1000,
                         borderRadius: 12,
                         overflow: 'hidden',
@@ -161,7 +181,7 @@ function PageNode({ data }) {
                 >
                     {/* Preview header */}
                     <div style={{
-                        padding: '4px 10px',
+                        padding: '6px 10px',
                         background: 'rgba(15,15,26,0.95)',
                         borderBottom: `1px solid ${catColor}40`,
                         display: 'flex',
@@ -175,6 +195,33 @@ function PageNode({ data }) {
                             <span style={{ fontSize: 9, color: '#22c55e', fontWeight: 700 }}>
                                 ● {analytics.active} live
                             </span>
+                        )}
+                    </div>
+
+                    {/* API ENDPOINTS SECTION (The "Wiring" view) */}
+                    <div style={{
+                        padding: '10px',
+                        background: '#0c0c1f',
+                        maxHeight: 120,
+                        overflowY: 'auto',
+                        borderBottom: `1px solid ${catColor}20`
+                    }}>
+                        <div style={{ fontSize: 9, color: '#64748b', fontWeight: 800, marginBottom: 6, textTransform: 'uppercase' }}>
+                            Engine Connectivity Matrix
+                        </div>
+                        {data.apis && data.apis.length > 0 ? (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                                {data.apis.map(api => (
+                                    <div key={api} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 9, color: '#e2e8f0', background: '#ffffff07', padding: '2px 6px', borderRadius: 4 }}>
+                                        <span style={{ fontFamily: 'monospace' }}>{api}</span>
+                                        <span style={{ fontSize: 8, color: '#22c55e' }}>● WIRED</span>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div style={{ fontSize: 9, color: '#ef4444', fontStyle: 'italic' }}>
+                                ! CRITICAL: No API endpoints detected for this page.
+                            </div>
                         )}
                     </div>
 
